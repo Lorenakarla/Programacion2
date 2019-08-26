@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1566696089 source:c:\users\karla\onedrive\documentos\unlam-desktop-bh56ceq\programacion2019\practica1\unidad01\main.c
+	"../../Biblioteca/matematica.h"
+	"../../Biblioteca/menu.h"
+
+1566680705 c:\users\karla\onedrive\documentos\unlam-desktop-bh56ceq\programacion2019\biblioteca\matematica.h
+
+1566680714 source:c:\users\karla\onedrive\documentos\unlam-desktop-bh56ceq\programacion2019\biblioteca\matematica.c
+	"matematica.h"
+	"menu.h"
+
+1566692550 c:\users\karla\onedrive\documentos\unlam-desktop-bh56ceq\programacion2019\biblioteca\menu.h
+	<stdio.h>
+	<stdlib.h>
+
+1566696745 source:c:\users\karla\onedrive\documentos\unlam-desktop-bh56ceq\programacion2019\practica1\unidad01\menu.c
+	"../../Biblioteca/menu.h"
+	"../../Biblioteca/matematica.h"
+
