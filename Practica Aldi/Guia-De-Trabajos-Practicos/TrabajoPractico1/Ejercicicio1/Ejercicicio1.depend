@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1566848171 source:c:\users\gyl\desktop\programacion\vectores\ejercicicio-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"matematica.h"
+
+1566847832 c:\users\gyl\desktop\programacion\vectores\ejercicicio-1\matematica.h
+
+1566848178 source:c:\users\gyl\desktop\programacion\vectores\ejercicicio-1\matematica.c
+	"matematica.h"
+
