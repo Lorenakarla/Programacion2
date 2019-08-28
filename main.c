@@ -1,34 +1,40 @@
-/*definicion de vectores + ejercicio*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
+
+double factorial(int n);
+double e_a_la_x(int x, int tol);
 
 int main()
 {
-//  "Inicializando un vector"
-
-    int vec1[5];
-    int vec2[]= {1,2,3,4,5};
-    int vec3[5]= {0}; ///todos en cero
-    int vec5[5]= {1,2,3,4,5,6,7,8}; ///solo me reconoce 5 pos, el resto me las ignora
-    int i;
-
-    ///me muestras el vec5+vec3+vec2 por ser consecutivos
-    for(i=0; i<15; i++)
-    {
-        printf("%d\n", vec5[i]);
-    }
-
-    ////////////////////////////////////////
-
-    ///PUNTEROS
-
-//    me da la posicion de memoria sin los corchetes
-    printf("%p\n", vec5);
-//    esto esta mal
-    ///vec1=vec2
-//    esto si se puede
-    vec1[0]=vec2[0];
-    printf("%c", '\65');
-
+    int num, tol;
+    printf("Ingrese un numero y una tolerancia: \n");
+    scanf("%d",&num);
+    scanf("%d",&tol);
+    printf("\nEl numero calculado es %lf", e_a_la_x(num,tol));
     return 0;
+}
+
+double factorial(int n)
+{
+    int r=1,cont=1;
+
+    while(cont <=n){
+        r*=cont;
+        cont++;
+    }
+    return r;
+}
+
+double e_a_la_x(int x, int tol)
+{
+    double rtdo=0;
+    int i=0;
+
+    while(rtdo < tol){
+    rtdo+= pow(x,i)/ factorial(i);
+    i++;
+    }
+    return rtdo;
+
 }
