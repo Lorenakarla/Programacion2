@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1566850884 source:c:\xampp\htdocs\programacion2\practica aldi\guia-de-trabajos-practicos\bibliotecas\matematica\matematica.c
+	"../../Bibliotecas/Matematica/matematica.h"
+
+1566851164 c:\xampp\htdocs\programacion2\practica aldi\guia-de-trabajos-practicos\bibliotecas\matematica\matematica.h
+
+1566851164 source:c:\xampp\htdocs\programacion2\practica aldi\guia-de-trabajos-practicos\bibliotecas\matematica\matematica.h
+
+1566851614 source:c:\xampp\htdocs\programacion2\practica aldi\guia-de-trabajos-practicos\trabajopractico1\ejercicio2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../Bibliotecas/Matematica/matematica.h"
+

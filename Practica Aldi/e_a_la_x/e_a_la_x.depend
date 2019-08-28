@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1566946134 source:c:\xampp\htdocs\programacion2\practica aldi\bibliotecas\matematica\matematica.h
+
+1566946734 source:c:\xampp\htdocs\programacion2\practica aldi\e_a_la_x\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
