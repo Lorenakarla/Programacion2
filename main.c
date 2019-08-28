@@ -1,51 +1,34 @@
+/*definicion de vectores + ejercicio*/
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
-#define FACTORIAL 1
-#define aMayus(x) ((x)>='a' && (x)<='z')? (x)-32 : (x)
-#define aMinus(x) ((x)>='A' && (x)<='Z')? (x)+32 : (x)
-#define esDigito(x) ((x)>='0' && (x)<='9')? 1 : 0
-#define esLetra(x) ((x)>='A' && (x)<='Z') || ((x)>='a' && (x)<='z'))? 1 : 0
-
-
-void ealax();
-double e_a_la_x(int x, double tol);
 int main()
 {
-//    ealax();
+//  "Inicializando un vector"
 
-    char letra='a';
-    ///otra forma de  convertir es a-A
-    printf("Si convierto [%c] a mayus es [%c]", letra, aMayus(letra));
-    printf("Si convierto [%c] a minus es [%c]", letra, aMinus(letra));
-    return 0;
-}
+    int vec1[5];
+    int vec2[]= {1,2,3,4,5};
+    int vec3[5]= {0}; ///todos en cero
+    int vec5[5]= {1,2,3,4,5,6,7,8}; ///solo me reconoce 5 pos, el resto me las ignora
+    int i;
 
-void ealax()
-{
-    double tol;
-    int num;
-    printf("\nCalculando e^x: ");
-    printf("\nIngrese la tol y el numero a calcular: \n");
-
-    scanf("%lf",&tol);
-    scanf("%d",&num);
-
-    printf("\EL resultado es %lf",e_a_la_x(num,tol));
-
-}
-double e_a_la_x(int x, double tol)
-{
-    double r=1, t=1;
-    int i=1;
-
-    while(t>tol)
+    ///me muestras el vec5+vec3+vec2 por ser consecutivos
+    for(i=0; i<15; i++)
     {
-        t=pow(x,i)/FACTORIAL;
-        ///t*=x/i;
-        r+=t;
-        i++;
+        printf("%d\n", vec5[i]);
     }
-    return r;
+
+    ////////////////////////////////////////
+
+    ///PUNTEROS
+
+//    me da la posicion de memoria sin los corchetes
+    printf("%p\n", vec5);
+//    esto esta mal
+    ///vec1=vec2
+//    esto si se puede
+    vec1[0]=vec2[0];
+    printf("%c", '\65');
+
+    return 0;
 }
