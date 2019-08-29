@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1567016794 source:c:\users\j\documents\unlam\progra\tp1\e_a_la_x\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

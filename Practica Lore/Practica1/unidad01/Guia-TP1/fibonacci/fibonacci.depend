@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1567108580 source:c:\users\j\documents\unlam\progra\tp1\fibonacci\main.c
+	<stdio.h>
+	<stdlib.h>
+
