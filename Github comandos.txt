@@ -1,0 +1,21 @@
+subir un cambio
+
+# Subir un cambio
+git add . 
+git commit -m "Descripcion de los cambios"
+git push origin master.
+
+#actualizar rama desde el repo
+git pull origin master
+
+
+#Crear una rama
+git branch iss53
+
+#Posicionarse en una rama
+git checkout iss53
+
+#Crear una rama y posicionarse en la misma
+git checkout -b iss53
+
+
