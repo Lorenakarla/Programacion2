@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 5
+void insertar(int v[], int val, int pos);
+void mostrar_vector(int v[],int ce);
+
+int main()
+{
+    int vec[]= {1,2,4,5,6}, pos, valor=0;
+
+    printf("\n------Mostrando el vector original-----\n");
+    mostrar_vector(vec,TAM);
+
+    do{
+        printf("\nIngrese una posicion (hasta %d): ",TAM);
+        scanf("%d",&pos);
+    }while( !(pos> 0 && pos <=TAM));
+
+    printf("\nIngrese el valor que desea agregar: ");
+    scanf("%d",&valor);
+    insertar(vec,valor,pos);
+    mostrar_vector(vec,TAM);
+    return 0;
+}
+
+void mostrar_vector(int v[],int ce)
+{
+    int i;
+
+    for(i=0; i<ce; i++)
+    {
+        printf("%d\t",v[i]);
+    }
+}
+
+void insertar(int v[], int val, int pos)
+{
+    int i=0, sig, sigsig;
+
+    while(v[i]!= '\0')
+    {
+        if(pos == (i+1))
+        {
+            sig=v[i];
+            v[i]=val;
+            sigsig=v[i+1];
+            v[i+1]=sig;
+            v[i+2]=sigsig;
+        }
+        i++;
+    }
+}
