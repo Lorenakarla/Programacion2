@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define esDigito(x) ( (x)>='0' && (x)<='9' )
+#define TAM 5
+
+void insertar_asc(int v[], int val);
+void mostrar_vector(int v[],int ce);
+
+int main()
+{
+    int vec[]= {10,20,30,40,50},  valor=0;
+    printf("\n------Mostrando el vector original-----\n");
+    mostrar_vector(vec,TAM);
+
+    do
+    {
+        printf("\nIngrese un valor entero: ");
+        scanf("%d",&valor);
+    }
+    while(( esDigito(valor)));
+
+    insertar_asc(vec,valor);
+    printf("\n------Mostrando el vector modificado-----\n");
+    mostrar_vector(vec,TAM);
+    return 0;
+}
+
+void mostrar_vector(int v[],int ce)
+{
+    int i;
+
+    for(i=0; i<ce; i++)
+    {
+        printf("%d\t",v[i]);
+    }
+}
+void insertar_asc(int v[], int val)
+{
+    int aux=0;
+
+    while(*v)
+    {
+        if(val < *v )
+        {
+            aux=*v;
+            *v = val;
+            val=*(v+1);
+            *(v+1)=aux;
+        }
+        v++;
+    }
+
+}
