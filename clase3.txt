@@ -1,0 +1,87 @@
+//Introduccion a los punteros, inicializacion. Estructuras, funciones, cadenas
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct
+{
+    int d, m, a;
+}t_fecha;
+
+typedef struct
+{
+    int dni;
+    char apyn[30];
+    float promedio;
+    t_fecha fecha;
+}t_alumno;
+
+void intercambiar(int *x, int * y);
+
+void imprimir(const t_alumno *palu);
+
+int main()
+{
+    int x=5;
+    int *px;
+    px=&x;
+    ///////////////////////PUNTEROS///////////////////////////////
+    printf("\nPrimer print x - &x\n");
+    printf("\%d %p", x, &x);
+    printf("\nSegundo print p - x - &px");
+    printf("\n%d -%p -%p",*px, &x, &px); /// Se desreferencia con el "*" &px me da la direccion del puntero
+                                                                ///    y &x es la direccion de la variable x
+
+    ///////////////////////PUNTEROS VECTORES////////////////////////
+    int vec[5];
+    int *pv1;
+
+    pv1=&vec[1];
+    *pv1=6;
+    pv1=vec;
+    printf("\n\n%p- %p", vec, &vec);
+    printf("\n%p- %p", pv1, &pv1);
+
+
+    //////////////////////FUNCION Y PUNTEROS///////////////////////////////////
+    int x1=5, y=8;
+    intercambiar(  &x1, & y);
+
+    ////////////////////Parametros ///////////////////////////
+
+/*//    -->entrada
+//    -->salida
+//    --E/s*/
+/*        El parametro de s y e/s siempre son del tipo puntero*/
+
+    ///////////////////////// ESTRUCTURAS Y PUNTEROS/////////////////////////////
+
+    t_alumno alu={123, "Lore",7.08,{22,06,2008}};
+    t_alumno *palu= &alu; /// declaro e inicializo el puntero de tipo estructura
+
+/*    "estructura" entonces "."
+    "puntero estructura" entonces "->"*/
+    printf("%d",palu->dni);
+    printf("%d", alu.fecha.a);
+
+    /////////////////////FUNCIONES Y ESTRUCTURAS CON PUNTEROS//////////////////////
+     imprimir(&alu);
+    imprimir(palu);
+
+    //////////////////////////CADENAS + aritmetica de punteros////////////////////////////////////
+
+    char cad2[]="hola";
+    char cad1[20]="hola";
+    char cad3[]={'h','o','l','a'};
+
+    return 0;
+}
+void intercambiar(int *x, int * y)
+{
+    int aux=*x;
+        *x=*y;
+        *y=aux;
+}
+void imprimir(const t_alumno *palu)
+{
+    printf("%d", palu->dni);
+}
