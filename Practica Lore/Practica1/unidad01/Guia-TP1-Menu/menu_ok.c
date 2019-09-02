@@ -1,5 +1,6 @@
-#include "../../Biblioteca/menu.h"
-#include "../../Biblioteca/matematica.h"
+#include "../../../Biblioteca/menu.h"
+#include<stdio.h>
+
 
 void mostrar_opciones()
 {
@@ -147,6 +148,5 @@ void menu()
 
     }
     while ( opcion != 5 );
-
+//    while ( !(opcion < 1 || opcion > 4));
 }
-
