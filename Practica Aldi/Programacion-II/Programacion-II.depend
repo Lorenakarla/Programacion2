@@ -1,0 +1,94 @@
+# depslib dependency file v1.0
+1567468259 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Bibliotecas/Menus/menu_principal.h"
+
+1567468223 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_principal.h
+
+1567468943 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_principal.c
+	"menu_principal.h"
+	"menu_tp_1.h"
+	"menu_tp_2.h"
+	"menu_tp_3.h"
+	"menu_tp_4.h"
+	"menu_tp_5.h"
+
+1567468666 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_1.h
+
+1567469002 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_2.h
+
+1567469029 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_3.h
+
+1567469059 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_4.h
+
+1567469092 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_5.h
+
+1567480447 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_1.c
+	"menu_tp_1.h"
+	"menu_matematico.h"
+	"menu_fechas.h"
+	"menu_vectores.h"
+	"menu_vectores.h"
+	"menu_principal.h"
+
+1567480453 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_2.c
+	"menu_tp_2.h"
+	"menu_principal.h"
+
+1567480472 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_3.c
+	"menu_tp_3.h"
+	"menu_principal.h"
+
+1567480466 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_4.c
+	"menu_tp_4.h"
+	"menu_principal.h"
+
+1567480462 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_tp_5.c
+	"menu_tp_5.h"
+	"menu_principal.h"
+
+1567479410 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_fechas.c
+	"menu_fechas.h"
+	"menu_tp_1.h"
+
+1567477851 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_fechas.h
+
+1567480992 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_matematico.c
+	"menu_matematico.h"
+	"menu_tp_1.h"
+
+1567477838 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_matematico.h
+
+1567479410 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_matrices.c
+	"menu_matrices.h"
+	"menu_tp_1.h"
+
+1567477873 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_matrices.h
+
+1567477861 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_vectores.h
+
+1567479410 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\menus\menu_vectores.c
+	"menu_vectores.h"
+	"menu_tp_1.h"
+
+1567480087 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\fechas.c
+	"fechas.h"
+
+1567479611 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\fechas.h
+
+1567480121 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\matrices.c
+	"matrices.h"
+
+1567479675 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\matrices.h
+
+1567480102 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\vectores.c
+	"vectores.h"
+
+1567479642 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\vectores.h
+
+1567481213 source:c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\matematica.c
+	"matematica.h"
+
+1567481039 c:\xampp\htdocs\programacion2\practica aldi\programacion-ii\bibliotecas\tp_1\matematica.h
+

@@ -1,0 +1,6 @@
+#ifndef MENU_VECTORES_H_INCLUDED
+#define MENU_VECTORES_H_INCLUDED
+
+void menu_vectores();
+
+#endif // MENU_VECTORES_H_INCLUDED

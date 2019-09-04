@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Programacion-II" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Programacion-II" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Programacion-II" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Bibliotecas/Menus/menu_fechas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_fechas.h" />
+		<Unit filename="Bibliotecas/Menus/menu_matematico.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_matematico.h" />
+		<Unit filename="Bibliotecas/Menus/menu_matrices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_matrices.h" />
+		<Unit filename="Bibliotecas/Menus/menu_principal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_principal.h" />
+		<Unit filename="Bibliotecas/Menus/menu_tp_1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_tp_1.h" />
+		<Unit filename="Bibliotecas/Menus/menu_tp_2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_tp_2.h" />
+		<Unit filename="Bibliotecas/Menus/menu_tp_3.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_tp_3.h" />
+		<Unit filename="Bibliotecas/Menus/menu_tp_4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_tp_4.h" />
+		<Unit filename="Bibliotecas/Menus/menu_tp_5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_tp_5.h" />
+		<Unit filename="Bibliotecas/Menus/menu_vectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Menus/menu_vectores.h" />
+		<Unit filename="Bibliotecas/TP_1/fechas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/TP_1/fechas.h" />
+		<Unit filename="Bibliotecas/TP_1/matematica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/TP_1/matematica.h" />
+		<Unit filename="Bibliotecas/TP_1/matrices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/TP_1/matrices.h" />
+		<Unit filename="Bibliotecas/TP_1/vectores.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/TP_1/vectores.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

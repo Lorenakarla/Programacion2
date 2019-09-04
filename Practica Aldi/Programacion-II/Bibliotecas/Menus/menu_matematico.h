@@ -1,0 +1,6 @@
+#ifndef MENU_MATEMATICO_H_INCLUDED
+#define MENU_MATEMATICO_H_INCLUDED
+
+void menu_matematico();
+
+#endif // MENU_MATEMATICO_H_INCLUDED

@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1567393192 source:c:\xampp\htdocs\programacion2\practica aldi\fibonacci\main.c
+	<stdio.h>
+	<stdlib.h>
+
