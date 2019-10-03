@@ -1,0 +1,97 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define FIL 3
+#define COL 3
+#define FIL2 3
+#define COL2 2
+
+void producto_matrices(int ma[FIL][COL], int mb[FIL2][COL2], int mc[COL][COL2]);
+void mostrar_matriz(int mat[FIL][COL]);
+void mostrar_matriz2(int mat[FIL2][COL2]);
+void producto_matrices2(int ma[FIL][COL], int mb[FIL2][COL2], int mc[COL][COL2]);
+
+int main()
+{
+    int mat_a[][COL]={
+        {1,2,3},
+        {4,5,6},
+        {1,1,1}
+    };
+
+    int mat_b[][COL2]={
+        {1,2},
+        {4,2},
+        {2,3}
+    };
+    int mat_c[FIL][COL2]={0};
+    printf("\nMATRIZ A\n");
+    mostrar_matriz(mat_a);
+
+    printf("\nMATRIZ B\n");
+    mostrar_matriz2(mat_b);
+
+    printf("\nProducto de matrices: \n");
+    producto_matrices2(mat_a,mat_b,mat_c);
+    mostrar_matriz2(mat_c);
+    return 0;
+}
+
+void mostrar_matriz(int mat[FIL][COL])
+{
+    int i,j;
+
+    for(i=0;i<FIL;i++)
+    {
+        for(j=0;j<COL;j++)
+        {
+            printf("%d\t", mat[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void mostrar_matriz2(int mat[FIL2][COL2])
+{
+    int i,j;
+
+    for(i=0;i<FIL2;i++)
+    {
+        for(j=0;j<COL2;j++)
+        {
+            printf("%d\t", mat[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void producto_matrices(int ma[FIL][COL], int mb[FIL2][COL2], int mc[COL][COL2])
+{
+    int i,j,k;
+
+    for(i=0;i<COL;i++)
+    {
+        for(j=0; j<COL2;j++)
+        {
+            for(k=0; k<COL; k++)
+            {
+                mc[i][j]+= ma[i][k]* mb[k][j];
+            }
+        }
+    }
+}
+
+void producto_matrices2(int ma[FIL][FIL], int mb[FIL2][COL2], int mc[FIL][COL2])
+{
+    int i,j,k;
+
+    for(i=0;i<FIL;i++)
+    {
+        for(j=0;j<COL2;j++)
+        {
+            for(k=0;k<FIL;k++)
+            {
+                mc[i][j]+= ma[i][k] * mb[k][j];
+            }
+        }
+    }
+}
