@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM_COLA 5
+typedef struct
+{
+    int dni;
+}t_alu;
+
+typedef t_alu t_info;
+
+typedef struct
+{
+    t_info vec[TAM_COLA];
+    int pri,
+        ult,
+        cant;
+}t_cola;
+
+void crear_cola(t_cola *p);
+
+int poner_en_cola(t_cola *p, const t_info *d);
+int cola_llena(const t_cola *p);
+int cola_vacia(const t_cola *p)
+int ver_frente(t_cola *p, t_info *d);
+void vaciar_cola(t_cola *p);
+int sacar_de_cola(t_cola *p, t_info *d);
+
+int main()
+{
+    printf("Hello world!\n");
+    return 0;
+}
+
+void crear_cola(t_cola *p)
+{
+    p->ult= -1;
+    p->pri= 0;
+    p->cant=0;
+}
+int poner_en_cola(t_cola *p, const t_info *d);
+int cola_llena(const t_cola *p)
+{
+    return p->cant == TAM_COLA;
+}
+int cola_vacia(const t_cola *p)
+{
+    return p->pri==0;
+}
+int ver_frente(t_cola *p, t_info *d);
+void vaciar_cola(t_cola *p);
+int sacar_de_cola(t_cola *p, t_info *d);
