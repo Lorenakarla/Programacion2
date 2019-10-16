@@ -1,0 +1,192 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define FIL 3
+#define COL 3
+#define TAM 3
+
+void mostrar_matriz(int mat[FIL][COL]);
+void mostrar_matriz_diag_pri_abajo(int mat[FIL][COL]);
+
+
+void diagonal_principal(int mat[FIL][COL]);
+void diagonal_secundaria(int mat[FIL][COL]);
+int suma_di_prin_arriba(int mat[TAM][TAM]);
+int suma_di_prin_abajo(int mat[TAM][TAM]);
+int suma_di_sec_arriba(int mat[TAM][TAM]);
+int suma_di_sec_abajo(int mat[TAM][TAM]);
+int suma_di_prin_abajo_in(int mat[TAM][TAM]);
+int suma_di_prin_arriba_in(int mat[TAM][TAM]);
+int suma_di_sec_abajo_in(int mat[TAM][TAM]);
+
+
+int main()
+{
+    int mat[FIL][COL]=
+    {
+        {1,2,3,},
+        {4,3,2},
+        {5,1,2}
+    };
+    printf("\nMatriz original\n\n");
+    mostrar_matriz(mat);
+
+    printf("\nDiagonal principal\n\n");
+    diagonal_principal(mat);
+    printf("\nDiagonal secundaria\n\n");
+    diagonal_secundaria(mat);
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal principal por debajo\n\n");
+    printf("\nEs: %d", suma_di_prin_abajo(mat));
+//    mostrar_matriz_diag_pri_abajo(mat);
+    printf("\n");
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal principal por debajo (incluida ella)\n\n");
+    printf("\nEs: %d", suma_di_prin_abajo_in(mat));
+    printf("\n");
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal principal por arriba\n");
+    printf("\nLa suma es: %d", suma_di_prin_arriba(mat));
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal principal por arriba (incluida ella )\n");
+    printf("\nLa suma es: %d", suma_di_prin_arriba_in(mat));
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal secundaria por abajo\n");
+    printf("\nLa suma es: %d", suma_di_sec_abajo(mat));
+    printf("\n---------------------------\n");
+    printf("\nSuma Diagonal secundaria por abajo(incluye diagonal)\n");
+    printf("\nLa suma es: %d", suma_di_sec_abajo_in(mat));
+    return 0;
+}
+void mostrar_matriz(int mat[FIL][COL])
+{
+    int i,j;
+
+    for(i=0; i<FIL; i++)
+    {
+        for(j=0; j<COL; j++)
+        {
+            printf("%d\t",mat[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+
+void diagonal_principal(int mat[FIL][COL])
+{
+    int i;
+
+    for(i=0; i<FIL; i++)
+        printf("%d\t",mat[i][i]);
+}
+
+void diagonal_secundaria(int mat[TAM][TAM])
+{
+    int i;
+
+    for(i=0; i<TAM; i++)
+        printf("%d\t",mat[i][TAM-i-1]);
+
+}
+int suma_di_prin_arriba(int mat[TAM][TAM])
+{
+    int i,j,suma=0;
+
+    for(i=0; i<TAM; i++)
+    {
+        for(j=1+i;j< TAM; j++)
+        {
+
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
+
+int suma_di_prin_arriba_in(int mat[TAM][TAM])
+{
+    int i,j,suma=0;
+
+    for(i=0; i<TAM; i++)
+    {
+        for(j=0+i;j< TAM; j++)
+        {
+
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
+int suma_di_prin_abajo(int mat[TAM][TAM])
+{
+    int i,j,suma=0;
+
+    for(i=1; i<TAM; i++)
+    {
+        for(j=0; j< i; j++)
+        {
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
+
+int suma_di_prin_abajo_in(int mat[TAM][TAM])
+{
+    int i,j,suma=0;
+
+    for(i=0; i<TAM; i++)
+    {
+        for(j=0; j<= i; j++)
+        {
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
+void mostrar_matriz_diag_pri_abajo(int mat[FIL][COL])
+{
+    int i,j,suma=0;
+
+    for(i=0; i<FIL; i++)
+    {
+        for(j=0; j<i; j++)
+        {
+            printf("m[%d][%d]=%d\t",i,j,mat[i][j]);
+            suma+=mat[i][j];
+        }
+        printf("\n");
+    }
+    printf("\nLa suma es %d",suma);
+}
+int suma_di_sec_abajo(int mat[TAM][TAM])
+{
+    int i,j, suma=0;
+
+    for(i=1;i<TAM; i++)
+    {
+        for(j=TAM -i;j<TAM; j++)
+        {
+            printf("m[%d][%d]=%d\n",i,j,mat[i][j]);
+
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
+
+int suma_di_sec_abajo_in(int mat[TAM][TAM])
+{
+    int i,j, suma=0;
+
+    for(i=0;i<TAM; i++)
+    {
+        for(j=TAM -i-1;j<TAM; j++)
+        {
+            printf("m[%d][%d]=%d\n",i,j,mat[i][j]);
+
+            suma+=mat[i][j];
+        }
+    }
+    return suma;
+}
