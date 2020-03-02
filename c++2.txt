@@ -1,0 +1,29 @@
+Clases
+
+Representa a un conjunto de objetos.Se compone de atributos y metodos. 
+
+Objeto 
+
+Un objeto es una instancia de una clase.
+
+Diferencias, un objeto es un unico elemento y una clase es el conjunto en si. Similitudes, tienen los mismos metodos y caracteristicas.
+
+Programacion orientada a objetos
+Es una paradigma de la programacion, en la que se hace enfasis en los objetos (a diferencia de la programacion estructural). Se destacan las clasificaciones de herencia, polimorfismo y encapsulamiento.
+
+class Punto2d
+{
+private:
+float x;
+float y;
+public:
+Punto2d();
+Punto2d(float, float)
+}
+La sobrecarga
+
+Son las distintas formas que tienen de responder a un mismo mensaje
+
+La herencia
+
+Se compone de una super clase y subclase, en donde se delegan los atributos.

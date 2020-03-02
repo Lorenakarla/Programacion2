@@ -1,0 +1,23 @@
+En c++ a diferencia de C las variables se pasan por referencias
+en de por copia de valor o punteros.
+Lo que significa que le pasas la direccion del elemento
+
+El puntero this es una palabra reservada que hace referencia al
+atributo miembro de la clase. Se utiliza para solventar la desambiguacion de nombre.
+
+Las funciones amigas son metodos especiales que se utilizan cuando el objeto llamador
+no pertenece a la clase. En donde en su definicion se hace presente la palabra friend
+
+Existen dos tipos de operadores de incremento, el post y el pre.
+La diferencia es que cuando uno se define el pre no tiene parametros en su argumento, y
+el post tiene un int.
+
+Cadena& operator++();
+Cadena operator++(int);
+
+
+class  ClaseConPunteros
+{
+private *_p;
+
+ClaseConPunteros(int *p);
